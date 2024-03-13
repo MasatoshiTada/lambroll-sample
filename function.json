@@ -1,0 +1,29 @@
+{
+  "Architectures": [
+    "x86_64"
+  ],
+  "Environment": {
+    "Variables": {
+      "MESSAGE": "Hello!"
+    }
+  },
+  "EphemeralStorage": {
+    "Size": 512
+  },
+  "FunctionName": "lambroll-sample",
+  "Handler": "com.example.SampleFunction",
+  "LoggingConfig": {
+    "LogFormat": "Text",
+    "LogGroup": "/aws/lambda/lambroll-sample"
+  },
+  "MemorySize": 256,
+  "Role": "arn:aws:iam::354350293176:role/lambroll-sample-role",
+  "Runtime": "java21",
+  "SnapStart": {
+    "ApplyOn": "PublishedVersions"
+  },
+  "Timeout": 3,
+  "TracingConfig": {
+    "Mode": "PassThrough"
+  }
+}
